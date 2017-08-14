@@ -17,5 +17,6 @@ get "/code" do
 end
 
 get '/cat' do
+  @random_name = ["Jazz", "Fidel Catro", "Colonel Cattafi"].sample
   erb(:index)
 end
