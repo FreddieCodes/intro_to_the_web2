@@ -16,7 +16,13 @@ get "/code" do
   "CODE IS LIFE"
 end
 
-get '/cat' do
-  @random_name = ["Jazz", "Fidel Catro", "Colonel Cattafi"].sample
+get "/random-cat" do
+  @name = ["Jazz", "Fidel Catro", "Colonel Cattafi"].sample
+  erb(:index)
+end
+
+get "/named-cat" do
+  p params
+  @location = ["Heaven", "Not so heaven"].sample
   erb(:index)
 end
