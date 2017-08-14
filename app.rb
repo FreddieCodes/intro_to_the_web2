@@ -23,6 +23,6 @@ end
 
 get "/named-cat" do
   p params
-  @location = ["Heaven", "Not so heaven"].sample
+  @name = params[:name]
   erb(:index)
 end
