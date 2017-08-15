@@ -1,9 +1,4 @@
 
-<!--- http://localhost:4567/named-cat?name=Adam&age=27&location=Kent
-"My name is Adam my age is 27 I live in Kent"
-
-I am going to Heaven/Not so heaven --->
-
 <% if @name %>
   <h1>My name is <%= @name %></h1>
 <% end %>
@@ -15,3 +10,17 @@ I am going to Heaven/Not so heaven --->
   <div style='border: 3px dashed red'>
     <img src = 'http://bit.ly/1eze8aE' alt = 'Cat'>
   </div>
+
+
+  <h1>"My name is <%=params[:name]%> my age is <%=params[:age]%> I live in <%=params[:location]%>"</h1>
+  <p> I am going to <%=@location%> </p>
+    <div style='border: 3px dashed red'>
+    <img src = 'http://bit.ly/1eze8aE' alt = 'Cat'>
+    </div>
+
+
+
+  <!--- http://localhost:4567/named-cat?name=Adam&age=27&location=Kent
+  "My name is Adam my age is 27 I live in Kent"
+
+  I am going to Heaven/Not so heaven --->
